@@ -1,36 +1,81 @@
  <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
   <title>My Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Matthew Craig">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 <!-- Menu -->
 	<!-- Responsive Bootstrap menu with links to sections -->
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">My Portfolio</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li>
+			<a href="#About">About</a>
+		</li>
+		<li>
+			<a href="#Experience">Experience</a>
+		</li>
+		<li>
+			<a href="#Education">Education</a>
+		</li>
+		<li>
+			<a href="#Projects">Projects</a>
+		</li>
+		<li>
+			<a href="#Skills">Skills</a>
+		</li>
+		<li>
+			<a href="#Contact">Contact</a>
+		</li>
+		</ul>
+    </div>
+  </div>
+</nav>
 <!-- Intro -->
 	<!-- Includes Name, Title, and Resume link on block div with image background -->
+<div id="Intro"></div>
 <!-- About me -->
 	<!-- Uses block style div with alternating background color -->
 	<!-- About me Title and Paragraph about me -->
+<div id="About"></div>
 <!-- Experience -->
 	<!-- Uses block style div with alternating background color -->
 	<!-- Timeline theme --> 
 	<!-- Each Job has a date employer name job title and blurb about it -->
+<div id="Experience"></div>
 <!-- Education -->
 	<!-- Uses block style div with alternating background color -->
 	<!-- Uses generic small div for each educator-->
 	<!-- Includes school time attended degree and various other info -->
+<div id="Education"></div>
 <!-- Projects -->
 	<!-- Uses block style div with alternating background color -->
 	<!-- Uses generic small div for each project-->
 	<!-- includes project name and description with link -->
+<div id="Projects"></div>
 <!-- Skills -->
 	<!-- Uses block style div with alternating background color -->
 	<!-- List of skills -->
+<div id="Skills"></div>
 <!-- Contact -->
 	<!-- Use a service for contacting -->
+<div id="Contact"></div>
 <!-- Footer -->
 	<!-- Copyright, Links to social media -->
 </body>
