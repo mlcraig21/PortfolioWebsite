@@ -1,0 +1,161 @@
+#Intro {
+	height: 100vh;
+	background: url(../images/intro-img.jpg);
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+}
+#intro-overlay {
+		background-color: rgba(124, 21, 28, 0.8);
+		height: 100vh;
+		background-size: cover;
+		overflow: hidden;
+		position: relative;
+}
+#Menu {
+	margin-bottom: 0px;
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	z-index: 5;
+	text-align: center;
+}
+#intro-content {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#name {
+	color: #fff;
+	font-size: 6em;
+	font-weight: 600;
+	line-height: .9em;
+	letter-spacing: .05em;
+	text-transform: uppercase;
+}
+#title {
+	color: #F8A6AC;
+	font-size:3em;
+	font-weight:300;
+	margin-bottom:15px;
+}
+.btn {
+	display: inline-block;
+	color: #fff;
+	padding: 15px 25px;
+	border: 3px solid #fff;
+	border-radius: 30px;
+	transition: .5s ease all;
+	text-align: center;
+	text-decoration: none;
+}
+.btn:hover {
+	color:#7C151C;
+	background:#fff;
+	text-decoration:none	
+}
+.nav {
+	list-style-type:none;
+	display:inline-block;
+	background:#fff;
+	padding-left: 0;
+	padding: 10px;
+	margin:0px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.nav li {
+	display:inline-block;
+	
+}
+.nav li a {
+	text-decoration: none;	
+	color: #7C151C;
+	padding: 10px;
+	display: block;
+}
+
+
+.nav li a:hover {	
+	background-color: #eee;
+	border-radius:4px;
+}
+
+body {
+	margin: 0px;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+}
+
+#mobile-menu-open {
+	display: none;
+	position:fixed;
+	top:10px;
+	right:15px;
+	z-index:5;
+	color:#7C151C;
+	background-color:#fff;
+	font-size:1.5em;
+	border-radius: 4px;
+	line-height:1.5;
+	padding: 0px 7px;
+	cursor: pointer;
+}
+
+#mobile-menu-close {
+	display: none;
+	width:100%;
+	text-align:right;
+	position: fixed;
+	top:10px;
+	right:15px;
+	z-index:5;
+	color:#7C151C;
+	background-color:#fff;
+	text-transform:uppercase;
+	line-height:1.5;
+	font-size:1.5em;
+	cursor: pointer;
+}
+
+body.active {
+	 overflow:hidden;
+ }
+ 
+#intro-content h1,
+#intro-content h2 {
+	 margin: 0px;
+ }
+ 
+ #intro-content h2 {
+	 margin-bottom: 15px;
+ }
+@media only screen and (max-width: 768px) {
+ #mobile-menu-open,
+ #mobile-menu-close {
+  display:block;
+ }
+ #Menu {
+	 display:none;
+	 height:100%;
+	 z-index:100;
+	 background-color:#fff;
+ }
+ 
+ #Menu.active {
+	 display:block;
+ }
+ 
+ .nav {
+	 height:100%;
+	 width:100%;
+	 padding-top: 50px;
+ }
+ .nav li {
+ display: block;
+ }
+}
+
